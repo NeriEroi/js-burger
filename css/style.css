@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5e2;
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding-left: 25px;
+    height: 13vh;
+    background-color: #fdbb40;
+}
+
+header h1 {
+    flex: 1 0 auto;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+header img {
+    height: 180%;
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 25px;
+}
+
+main .burger-name {
+    border: none;
+    font-size: 24px;
+    margin-bottom: 40px;
+    width: 200px;
+    color: #777;
+}
+
+main .burger-name:focus, #coupon:focus {
+    outline: none;
+}
+
+main > div {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+form > div > div {
+    display: inline-block;
+}
+
+form > div > div:first-child {
+    width: 65%;
+}
+
+form img {
+    width: 20%;
+    max-width: 45px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+form input {
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+    border-color: #ccc;
+}
+
+form label {
+    color: red;
+}
+
+main #coupon {
+    margin: 40px 0;
+    background-color: #fff5e2;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+main #price {
+    background-color: #fdbb40;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+main #price:active {
+    background-color: #dfa842;
+    transform: translateY(2px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #d33359;
+    padding: 0 25px;
+    color: #fff;
+}
+
+footer * {
+    line-height: 80px;
+    display: inline-block;
+}
