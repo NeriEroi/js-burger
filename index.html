@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Burger</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="">
+        </header>
+
+        <main>
+
+            <input id="sandwich" class="burger-name" type="text" placeholder="Name Your Burger">
+            
+            <div>Ingredients</div>
+            <form>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/cheese.svg" alt="">
+                        <span>Cheese (5€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='cheese' name='cheeseIngredient' value="5">
+                        <label for="cheese">add</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/tomato.svg" alt="">
+                        <span>Tomato (3€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='tomato' name='tomatoIngredient' value="3">
+                        <label for="tomato">add</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/fried-egg.svg" alt="">
+                        <span>Egg (4€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='egg' name='eggIngredient' value="4">
+                        <label for="egg">add</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/lettuce.svg" alt="">
+                        <span>Lettuce (7€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='lettuce' name='lettuceIngredient' value="7">
+                        <label for="lettuce">add</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/mustard.svg" alt="">
+                        <span>Mustard (1€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='mustard' name='mustardIngredient' value="1">
+                        <label for="mustard">add</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="topping-img">
+                        <img src="img/ketchup.svg" alt="">
+                        <span>Ketchup (2€)</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="ingredient" id='ketchup' name='ketchupIngredient' value="2">
+                        <label for="ketchup">add</label>
+                    </div>
+                </div>
+
+            </form>
+
+            <span>Discount coupon</span>
+            <input id="coupon" type="textarea" placeholder="12345ABCDEF">
+            
+            
+            <button id="price">Calculate</button>
+        
+        </main>
+
+        <footer>
+            <h2 id="burgerName"></h2>
+            <h1 id="result"></h1>
+        </footer>
+
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
